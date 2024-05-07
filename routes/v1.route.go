@@ -1,6 +1,9 @@
 package routes
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"github.com/gofiber/fiber/v2"
+	"go-todo-app/controllers"
+)
 
 func v1Route(app *fiber.App) {
 
@@ -8,38 +11,10 @@ func v1Route(app *fiber.App) {
 
 	todo := v1.Group("/todo")
 
-	todo.Post("/", func(ctx *fiber.Ctx) error {
+	todo.Post("/", controllers.CreateTodo)
+	todo.Get("/", controllers.GetAllTodo)
 
-		//create one todo
-
-		return nil
-	})
-	todo.Get("/", func(ctx *fiber.Ctx) error {
-
-		//get list of todo
-
-		return nil
-	})
-
-	todo.Get("/:id", func(ctx *fiber.Ctx) error {
-
-		//get todo by id
-
-		return nil
-	})
-
-	todo.Patch("/:id", func(ctx *fiber.Ctx) error {
-
-		//update todo by id
-
-		return nil
-	})
-
-	todo.Delete("/:id", func(ctx *fiber.Ctx) error {
-
-		//delete todo by id
-
-		return nil
-	})
-
+	todo.Get("/:id", controllers.GetTodoById)
+	todo.Patch("/:id", controllers.UpdateTodoById)
+	todo.Delete("/:id", controllers.DeleteTodoById)
 }
