@@ -17,7 +17,8 @@ This application is built using:
 - **MySQL**: As the primary database.
 
 ## Database Schema
-![Database Schema](path/to/database/schema/image.png)
+![Database Schema](path/to/database/schema/image.png)![Screenshot (75)](https://github.com/flanker0507/go-todo-app/assets/108620970/aecae092-7109-4a4e-9a66-9bf45453288c)
+
 
 ## How to Run
 To run this project, follow these steps:
