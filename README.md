@@ -22,17 +22,24 @@ This application is built using:
 ## How to Run
 To run this project, follow these steps:
 1. Clone the repository:
-   ```bash
+   ```
    git clone https://github.com/flanker0507/go-todo-app.git
-   
+   ```
 2. Navigate to the project directory:
-   cd go-todo-app
-   
-3.  Install dependencies:
-   go mod tidy
-   
+```
+cd go-todo-app
+```
+3. Install dependencies:
+```
+go mod tidy
+```
 4. Start the server:
+   ```
    go run main.go
+   ```
 
+# API documentation
+```
+https://documenter.getpostman.com/view/27917478/2sA3JM7gq6
+```
 
-   
